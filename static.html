@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/theme-toggle.js"></script>
+    <script defer src="scripts/script.js"></script>
+
+    <title>Frontend Mentor | Frontend quiz app</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <header class="header">
+        <h1 class="title visually-hidden">Frontend quiz app</h1>
+        <div class="category" id="quiz-category-header">
+          <img class="option__box option__box--accessibility" src="assets/images/icon-accessibility.svg" alt="Accessibility icon">
+          <span class="option__text">Accessibility</span>
+        </div>
+        <form id="theme-toggle-form" class="theme-toggle__container">
+          <input id="theme-toggle" type="checkbox"    aria-label="auto" aria-live="polite"/>
+          <label for="theme-toggle" class="theme-toggle__label">
+            <svg class="theme-toggle__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"><path d="M12 1.5a.75.75 0 0 1 .75.75v1.5a.75.75 0 1 1-1.5 0v-1.5A.75.75 0 0 1 12 1.5Zm0 15a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm0-1.5a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm9.75-2.25a.75.75 0 1 0 0-1.5h-1.5a.75.75 0 1 0 0 1.5h1.5ZM12 19.5a.75.75 0 0 1 .75.75v1.5a.75.75 0 1 1-1.5 0v-1.5a.75.75 0 0 1 .75-.75Zm-8.25-6.75a.75.75 0 1 0 0-1.5h-1.5a.75.75 0 1 0 0 1.5h1.5Zm.969-8.031a.75.75 0 0 1 1.062 0l1.5 1.5a.751.751 0 0 1-1.062 1.062l-1.5-1.5a.75.75 0 0 1 0-1.062Zm1.062 14.562a.75.75 0 1 1-1.062-1.06l1.5-1.5a.75.75 0 1 1 1.062 1.06l-1.5 1.5Zm13.5-14.562a.75.75 0 0 0-1.062 0l-1.5 1.5a.751.751 0 0 0 1.062 1.062l1.5-1.5a.75.75 0 0 0 0-1.062Zm-1.062 14.562a.75.75 0 0 0 1.062-1.06l-1.5-1.5a.75.75 0 0 0-1.062 1.06l1.5 1.5Z" fill="currentColor"/></svg>
+            <div class="theme-toggle__switch"></div>
+            <svg class="theme-toggle__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"><path d="M11.775 4.522A7.5 7.5 0 1 1 4.898 16.09c2.104-.57 4.974-1.953 6.24-5.326.828-2.211.876-4.408.637-6.241ZM20.184 12a8.997 8.997 0 0 0-9.315-8.994.75.75 0 0 0-.713.888c.345 1.821.42 4.092-.424 6.342-1.2 3.201-4.203 4.26-6.115 4.606a.75.75 0 0 0-.542 1.066A9 9 0 0 0 20.184 12Z" fill="currentColor"/></svg>
+          </label>
+        </form>
+      </header>
+
+      <main class="main">
+
+        <!-- Quiz main menu (dynamic) start -->
+        <form id="main-menu-form" class="screen">
+          <div class="screen__heading screen__heading--welcome">
+            <h2 class="screen__heading-title">
+              <span>Welcome to the</span> Frontend Quiz!</h2>
+            <p class="instructions">Pick a subject to get started.</p>
+          </div>
+          <div class="screen__options"></div>
+        </form>
+        <!-- Quiz main menu (dynamic) end -->
+
+        <!-- Quiz main menu (static) start -->
+        <form id="main-menu-form-static" class="screen screen--welcome">
+          <div class="screen__heading screen__heading--welcome">
+            <h2 class="screen__heading-title">
+              <span>Welcome to the</span> Frontend Quiz!</h2>
+            <p class="instructions">Pick a subject to get started.</p>
+          </div>
+          <div class="screen__options">
+            <fieldset id="options-list" class="options-list">
+              <legend>Select a choice:</legend>
+              <label for="choice-html" class="option">
+                <input type="radio" id="choice-html" name="subject-choice" value="html"/>
+                <img class="option__box option__box--html" src="assets/images/icon-html.svg" alt="HTML icon">
+                <span class="option__text">HTML</span>
+              </label>
+              <label for="choice-css" class="option">
+                <input type="radio" id="choice-css" name="subject-choice" value="css"/>
+                <img class="option__box option__box--css" src="assets/images/icon-css.svg" alt="CSS icon">
+                <span class="option__text">CSS</span>
+              </label>
+              <label for="choice-javascript" class="option">
+                <input type="radio" id="choice-javascript" name="subject-choice" value="javascript"/>
+                <img class="option__box option__box--javascript" src="assets/images/icon-js.svg" alt="JavaScript icon">
+                <span class="option__text">JavaScript</span>
+              </label>
+              <label for="choice-accessibility" class="option">
+                <input type="radio" id="choice-accessibility" name="subject-choice" value="accessibility"/>
+                <img class="option__box option__box--accessibility" src="assets/images/icon-accessibility.svg" alt="Accessibility icon">
+                <span class="option__text">Accessibility</span>
+              </label>
+            </fieldset>
+          </div>
+        </form>
+        <!-- Quiz main menu (static) end -->
+
+        <!-- Quiz question (static) start -->
+        <form id="question-form-static" class="screen screen--question">
+          <div class="screen__heading screen__heading--question">
+            <div class="question">
+              <p class="question__num">Question <span  id="current-question-num">6</span> of <span id="total-num-questions">10</span></p>
+              <p id="question-text" class="question__text">Which of these color contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?</p>
+            </div>
+            <div class="progress-bar"><input type="range" name="progress-bar" id="progress-bar" min="1" max="10" value="6" disabled></div>
+          </div>
+          <div class="screen__options">
+            <fieldset id="answer-choices-list" class="options-list">
+              <legend>Select an answer:</legend>
+              <label for="choice-A" class="option option--answer-choice">
+                <input type="radio" id="choice-A" name="answer-choice" value="A"/>
+                <span class="option__box">A</span>
+                <span class="option__text">4.5 : 1</span>
+              </label>
+              <label for="choice-B" class="option option--answer-choice option--correct">
+                <input type="radio" id="choice-B" name="answer-choice" value="B"/>
+                <span class="option__box">B</span>
+                <span class="option__text">3 : 1</span>
+              </label>
+              <label for="choice-C" class="option option--answer-choice option--incorrect">
+                <input type="radio" id="choice-C" name="answer-choice" value="C"/>
+                <span class="option__box">C</span>
+                <span class="option__text">2.5 : 1</span>
+              </label>
+              <label for="choice-D" class="option option--answer-choice">
+                <input type="radio" id="choice-D" name="answer-choice" value="D"/>
+                <span class="option__box">D</span>
+                <span class="option__text">5 : 1</span>
+              </label>
+            </fieldset>
+            <button id="submit-answer-button" class="button">Submit Answer</button>
+            <span aria-live="polite" id="option-error" class="option-error"><img src="assets/images/icon-error.svg" alt="error icon">Please select an answer</span>
+          </div>
+        </form>
+        <!-- Quiz question (static) end -->
+
+        <!-- Quiz results (static) start -->
+        <section id="results-screen-static" class="screen screen--results">
+          <div class="screen__heading">
+            <h2 class="screen__heading-title">
+              <span>Quiz completed</span> You scored...</h2>
+          </div>
+          <div class="screen__options">
+            <div class="final-score">
+              <div class="category">
+                <img class="option__box option__box--accessibility" src="assets/images/icon-accessibility.svg" alt="HTML icon">
+                <span class="option__text">Accessibility</span>
+              </div>
+              <div class="final-score__values">
+                <p class="final-score__correct">8</p>
+                <p class="final-score__outof">out of 10</p>
+              </div>
+            </div>
+            <form id="play-again-form">
+              <button id="play-again-button" class="button">Play Again</button>
+            </form>
+          </div>
+        </section>
+        <!-- Quiz results (static) end -->
+
+      </main>
+    </div>
+
+  </body>
+</html>
