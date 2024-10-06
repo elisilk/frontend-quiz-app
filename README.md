@@ -63,6 +63,7 @@ Users should be able to:
 - [Remove All Elements with a Class Using JavaScript](https://stackabuse.com/bytes/remove-all-elements-with-a-class-using-javascript/)
 - [Convert number to alphabet letter](https://stackoverflow.com/questions/36129721/convert-number-to-alphabet-letter)
 - [Get loop counter/index using for…of syntax in JavaScript](https://stackoverflow.com/questions/10179815/get-loop-counter-index-using-for-of-syntax-in-javascript)
+- Looking for a CSS only styling of the input range (the progress bar).
 
 ### Continued development
 
