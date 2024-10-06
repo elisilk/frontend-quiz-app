@@ -6,7 +6,7 @@ This is a solution to the [Frontend quiz app challenge on Frontend Mentor](https
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -33,9 +33,13 @@ Users should be able to:
 - Navigate the entire app only using their keyboard
 - **Bonus**: Change the app's theme between light and dark
 
-### Screenshot
+### Screenshots
 
-![](./screenshot.jpg)
+|                 Mobile designed at 375px:                 |                 Tablet designed at 768px:                 |                Desktop designed at 1440px:                 |
+| :-------------------------------------------------------: | :-------------------------------------------------------: | :--------------------------------------------------------: |
+| ![](./screenshots/screenshot-mobile-light-start-menu.png) | ![](./screenshots/screenshot-tablet-light-start-menu.png) | ![](./screenshots/screenshot-desktop-light-start-menu.png) |
+|                   Mobile (dark theme):                    |                   Tablet (dark theme):                    |                   Desktop (dark theme):                    |
+| ![](./screenshots/screenshot-mobile-dark-start-menu.png)  | ![](./screenshots/screenshot-tablet-dark-start-menu.png)  | ![](./screenshots/screenshot-desktop-dark-start-menu.png)  |
 
 ### Links
 
